@@ -9,7 +9,7 @@ const int enA = 5;
 const int in1 = 4;
 const int in2 = 3;
 const int in3 = 2;
-const int in4 = 7;
+const int in4 = 8;
 const int enB = 6;
 
 Servo MicroSky;
