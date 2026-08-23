@@ -13,9 +13,12 @@ Serial.begin(9600);
 void loop() {
   // put your main code here, to run repeatedly:
 White = analogRead(potPin);
-Serial.println(White);
-numbers = 255*(White/1023);
+
+numbers = map(White, 0, 1023, 0, 255);
+
 analogWrite(ledPin,numbers);
+
+Serial.println(White);
 Serial.println(numbers);
 delay(250);
 }
